@@ -9,7 +9,7 @@ public class Scenario {
 		// TODO Auto-generated method stub
 		Gaulois asterix = new Gaulois("Astérix", 8);
 		Romain minus = new Romain("Minus", 6);
-		asterix.parler("Bonjourà tous");
+		asterix.parler("Bonjour à tous");
 		minus.parler("UN GAU... UN GAUGAU...");
 		for (int i = 0; i < 3; i++) {
 			asterix.frapper(minus);
