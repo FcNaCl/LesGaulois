@@ -28,9 +28,10 @@ public class Gaulois {
 	public static void main(String[] args) {
 		// TODO faire la fonction de test pour la classe Gaulois
 		Gaulois asterix = new Gaulois("Asterix", 8);
-		System.out.println(asterix);
-		System.out.println(asterix.prendreParole());
+		/*System.out.println(asterix);
+		System.out.println(asterix.prendreParole());*/
 		asterix.parler("Oui");
+		asterix.boirePotion(3);
 	}
 	public void parler(String texte) {
 		System.out.println(prendreParole() + "<<" + texte + ">>");
@@ -49,6 +50,10 @@ public class Gaulois {
 		System.out.println(nom + "envoie un grand coup dans la mâchoire de " + romain.getNom());
 		romain.recevoirCoup(force/3);
 	}*/
+	public void boirePotion(int forcePotion) {
+		this.effetPotion = forcePotion;
+		parler("Merci Druide, je sens que ma force est " + this.effetPotion + " fois décuplée.");
+	}
 	
 	public void frapper(Romain romain) { 
 		System.out.println(nom  +  "  envoie  un  grand  coup  dans  la mâchoire de " + romain.getNom()); 
